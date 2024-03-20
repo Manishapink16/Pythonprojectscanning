@@ -1,10 +1,12 @@
-name: Security Scan
+name: Security Scan 
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
 
+ 
 jobs:
   security_scan:
     runs-on: ubuntu-latest
